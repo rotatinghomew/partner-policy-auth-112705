@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pt-1",
+    "proposal": "pp-1",
+    "tenant": "coop-a",
+    "purpose": "settle",
+    "state": "requested",
+    "revision": "rev-2",
+    "at": 27
+  },
+  {
+    "id": "pt-2",
+    "proposal": "pp-1",
+    "tenant": "coop-a",
+    "purpose": "settle",
+    "state": "active",
+    "revision": "rev-2",
+    "at": 29
+  },
+  {
+    "id": "pt-3",
+    "proposal": "pp-2",
+    "tenant": "coop-b",
+    "purpose": "inspect",
+    "state": "requested",
+    "revision": "rev-3",
+    "at": 31
+  },
+  {
+    "id": "pt-4",
+    "proposal": "pp-2",
+    "tenant": "coop-b",
+    "purpose": "inspect",
+    "state": "withdrawn",
+    "revision": "rev-3",
+    "at": 40
+  }
+]

@@ -17,6 +17,8 @@
 | `proposals.json` | 政策登记台 | 提议提出一种政策变化；detail 是要登记的事实字段。 |
 | `resource_labels.json` | 报表接口 | owner 和 label 分别为实际登记归属和当前标签。 |
 | `observations.json` | 报表入口 | 记录可作为业务请求回放输入，不记录任何预定授权结果。 |
+| `activations.json` | 各租户报表服务 | 状态描述实际接入申请及服务确认；revision 表示该端应用的政策资料引用。 |
+
 ## 本地运行
 
 使用 Python 3.11 标准库。启动只读资料服务后可查看各来源当前准备好的输入文件：
@@ -31,4 +33,4 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory feeds
 python3 -m unittest discover -s tests -v
 ```
 
-测试核对演练资料的字段与索引引用。
+测试核对演练资料的字段、索引及来源间的引用。

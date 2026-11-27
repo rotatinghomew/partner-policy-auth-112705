@@ -10,6 +10,7 @@
     "admin_scopes": "安全授权人",
     "proposals": "政策登记台",
     "resource_labels": "报表接口",
-    "observations": "报表入口"
+    "observations": "报表入口",
+    "activations": "各租户报表服务"
   }
 }

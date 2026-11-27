@@ -4,7 +4,8 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCHEMA = {'directory': ('id', 'person', 'company', 'site', 'role'), 'condition_domain': ('id', 'operation', 'purpose', 'label', 'owner_class', 'scope'), 'rules': ('id', 'role', 'operation', 'purpose', 'label', 'owner_class', 'effect'), 'edges': ('id', 'child', 'parent', 'owner'), 'admin_scopes': ('id', 'actor', 'company', 'may_edit', 'stages'), 'proposals': ('id', 'actor', 'operation', 'target', 'detail', 'at'), 'resource_labels': ('id', 'owner', 'site', 'label'), 'observations': ('id', 'person', 'tenant', 'resource', 'operation', 'purpose', 'at')}
+SCHEMA = {'directory': ('id', 'person', 'company', 'site', 'role'), 'condition_domain': ('id', 'operation', 'purpose', 'label', 'owner_class', 'scope'), 'rules': ('id', 'role', 'operation', 'purpose', 'label', 'owner_class', 'effect'), 'edges': ('id', 'child', 'parent', 'owner'), 'admin_scopes': ('id', 'actor', 'company', 'may_edit', 'stages'), 'proposals': ('id', 'actor', 'operation', 'target', 'detail', 'at'), 'resource_labels': ('id', 'owner', 'site', 'label'), 'observations': ('id', 'person', 'tenant', 'resource', 'operation', 'purpose', 'at'), 'activations': ('id', 'proposal', 'tenant', 'purpose', 'state', 'revision', 'at')}
+RELATIONS = [('observations', ('resource',), 'resource_labels', ('id',)), ('admin_scopes', ('actor', 'company'), 'directory', ('id', 'company')), ('activations', ('proposal',), 'proposals', ('id',))]
 
 
 class FixtureContract(unittest.TestCase):
@@ -21,6 +22,19 @@ class FixtureContract(unittest.TestCase):
                         self.assertIs(type(row[field]), int)
                     if "occurred" in row and "received" in row:
                         self.assertLessEqual(row["occurred"], row["received"])
+
+    def test_cross_source_references(self):
+        feeds = {
+            name: json.loads((ROOT / "feeds" / (name + ".json")).read_text())
+            for name in SCHEMA
+        }
+        for source, fields, target, target_fields in RELATIONS:
+            with self.subTest(source=source, target=target, link=fields):
+                keys = {tuple(row[key] for key in target_fields) for row in feeds[target]}
+                for row in feeds[source]:
+                    ref = tuple(row[key] for key in fields)
+                    if None not in ref:
+                        self.assertIn(ref, keys)
 
     def test_reference_from_service_directory(self):
         catalog = json.loads((ROOT / "feeds" / "index.json").read_text())
