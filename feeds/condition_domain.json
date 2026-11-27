@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cd-1",
+    "operation": "read",
+    "purpose": "settle",
+    "label": "own",
+    "owner_class": "request_org",
+    "scope": "organization"
+  },
+  {
+    "id": "cd-2",
+    "operation": "approve",
+    "purpose": "settle",
+    "label": "own",
+    "owner_class": "request_org",
+    "scope": "organization"
+  },
+  {
+    "id": "cd-3",
+    "operation": "approve",
+    "purpose": "settle",
+    "label": "partner",
+    "owner_class": "other_org",
+    "scope": "organization"
+  },
+  {
+    "id": "cd-4",
+    "operation": "read",
+    "purpose": "inspect",
+    "label": "partner",
+    "owner_class": "other_org",
+    "scope": "site"
+  },
+  {
+    "id": "cd-5",
+    "operation": "read",
+    "purpose": "settle",
+    "label": "unknown",
+    "owner_class": "unknown",
+    "scope": "organization"
+  },
+  {
+    "id": "cd-6",
+    "operation": "approve",
+    "purpose": "inspect",
+    "label": "partner",
+    "owner_class": "other_org",
+    "scope": "site"
+  }
+]

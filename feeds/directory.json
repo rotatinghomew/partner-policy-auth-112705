@@ -1,0 +1,37 @@
+[
+  {
+    "id": "d-1",
+    "person": "u4",
+    "company": "coop-a",
+    "site": "east",
+    "role": "report-reader"
+  },
+  {
+    "id": "d-2",
+    "person": "u7",
+    "company": "coop-b",
+    "site": "west",
+    "role": "report-reader"
+  },
+  {
+    "id": "d-3",
+    "person": "u12",
+    "company": "coop-a",
+    "site": "east",
+    "role": "admin-a"
+  },
+  {
+    "id": "d-4",
+    "person": "u17",
+    "company": "coop-b",
+    "site": "west",
+    "role": "admin-b"
+  },
+  {
+    "id": "d-5",
+    "person": "u20",
+    "company": "association",
+    "site": "central",
+    "role": "security"
+  }
+]

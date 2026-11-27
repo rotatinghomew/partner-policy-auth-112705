@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ob-1",
+    "person": "u4",
+    "tenant": "coop-a",
+    "resource": "rs-1",
+    "operation": "read",
+    "purpose": "settle",
+    "at": 28
+  },
+  {
+    "id": "ob-2",
+    "person": "u4",
+    "tenant": "coop-a",
+    "resource": "rs-2",
+    "operation": "approve",
+    "purpose": "settle",
+    "at": 29
+  },
+  {
+    "id": "ob-3",
+    "person": "u7",
+    "tenant": "coop-b",
+    "resource": "rs-2",
+    "operation": "read",
+    "purpose": "settle",
+    "at": 31
+  },
+  {
+    "id": "ob-4",
+    "person": "u12",
+    "tenant": "coop-a",
+    "resource": "rs-3",
+    "operation": "read",
+    "purpose": "settle",
+    "at": 36
+  }
+]

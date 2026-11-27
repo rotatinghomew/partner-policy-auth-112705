@@ -1,0 +1,23 @@
+[
+  {
+    "id": "as-1",
+    "actor": "d-3",
+    "company": "coop-a",
+    "may_edit": "own_users,own_labels",
+    "stages": "none"
+  },
+  {
+    "id": "as-2",
+    "actor": "d-4",
+    "company": "coop-b",
+    "may_edit": "own_users,own_labels",
+    "stages": "none"
+  },
+  {
+    "id": "as-3",
+    "actor": "d-5",
+    "company": "association",
+    "may_edit": "tenant_edges,rules,labels",
+    "stages": "read,inspect,settle"
+  }
+]

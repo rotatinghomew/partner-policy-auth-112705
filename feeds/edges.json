@@ -1,0 +1,20 @@
+[
+  {
+    "id": "er-1",
+    "child": "report-editor",
+    "parent": "report-reader",
+    "owner": "coop-a"
+  },
+  {
+    "id": "er-2",
+    "child": "regional-auditor",
+    "parent": "public-list",
+    "owner": "association"
+  },
+  {
+    "id": "er-3",
+    "child": "staged-analyst",
+    "parent": "public-list",
+    "owner": "association"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pp-1",
+    "actor": "d-5",
+    "operation": "add_edge",
+    "target": "staged-analyst",
+    "detail": "report-editor",
+    "at": 20
+  },
+  {
+    "id": "pp-2",
+    "actor": "d-5",
+    "operation": "expand_rule",
+    "target": "ru-2",
+    "detail": "partner,other_org",
+    "at": 21
+  },
+  {
+    "id": "pp-3",
+    "actor": "d-3",
+    "operation": "tag_resource",
+    "target": "rs-2",
+    "detail": "own,coop-a",
+    "at": 22
+  },
+  {
+    "id": "pp-4",
+    "actor": "d-5",
+    "operation": "pilot",
+    "target": "pp-1",
+    "detail": "coop-a,settle",
+    "at": 27
+  },
+  {
+    "id": "pp-5",
+    "actor": "d-5",
+    "operation": "disable_rule",
+    "target": "ru-2",
+    "detail": "all",
+    "at": 35
+  },
+  {
+    "id": "pp-6",
+    "actor": "d-5",
+    "operation": "change_edge",
+    "target": "er-3",
+    "detail": "regional-auditor",
+    "at": 30
+  }
+]

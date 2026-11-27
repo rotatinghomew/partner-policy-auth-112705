@@ -1,0 +1,20 @@
+[
+  {
+    "id": "rs-1",
+    "owner": "coop-a",
+    "site": "east",
+    "label": "own"
+  },
+  {
+    "id": "rs-2",
+    "owner": "coop-b",
+    "site": "west",
+    "label": "partner"
+  },
+  {
+    "id": "rs-3",
+    "owner": "coop-a",
+    "site": "east",
+    "label": "unknown"
+  }
+]

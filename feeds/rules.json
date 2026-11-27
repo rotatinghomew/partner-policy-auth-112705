@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ru-1",
+    "role": "report-reader",
+    "operation": "read",
+    "purpose": "settle",
+    "label": "own",
+    "owner_class": "request_org",
+    "effect": "allow"
+  },
+  {
+    "id": "ru-2",
+    "role": "report-editor",
+    "operation": "approve",
+    "purpose": "settle",
+    "label": "own",
+    "owner_class": "request_org",
+    "effect": "allow"
+  },
+  {
+    "id": "ru-3",
+    "role": "regional-auditor",
+    "operation": "read",
+    "purpose": "inspect",
+    "label": "partner",
+    "owner_class": "other_org",
+    "effect": "allow"
+  },
+  {
+    "id": "ru-4",
+    "role": "regional-auditor",
+    "operation": "approve",
+    "purpose": "settle",
+    "label": "partner",
+    "owner_class": "other_org",
+    "effect": "deny"
+  },
+  {
+    "id": "ru-5",
+    "role": "public-list",
+    "operation": "read",
+    "purpose": "settle",
+    "label": "unknown",
+    "owner_class": "unknown",
+    "effect": "allow"
+  }
+]

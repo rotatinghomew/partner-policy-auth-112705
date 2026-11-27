@@ -1,0 +1,15 @@
+{
+  "time_origin": "2026-11-27T00:00:00Z",
+  "time_unit": "minute",
+  "sample_ref": "proposals/pp-2",
+  "sources": {
+    "directory": "机构身份目录",
+    "condition_domain": "接口协议登记",
+    "rules": "安全平台主管",
+    "edges": "角色关系",
+    "admin_scopes": "安全授权人",
+    "proposals": "政策登记台",
+    "resource_labels": "报表接口",
+    "observations": "报表入口"
+  }
+}
